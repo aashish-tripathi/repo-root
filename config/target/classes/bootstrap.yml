@@ -1,0 +1,53 @@
+spring:
+  profiles: dev
+  application:
+    name: config
+server:
+   port: 8888
+
+#eureka:
+#   client:
+#       register-with-eureka: false
+#       fetch-registry: false
+       
+---
+
+spring:
+  profiles: uat
+  application:
+    name: config
+server:
+   port: 8888
+
+#eureka:
+#   client:
+#       register-with-eureka: false
+#       fetch-registry: false
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: config
+server:
+   port: 8888
+
+#eureka:
+#   client:
+#       register-with-eureka: false
+#       fetch-registry: false
+
+---
+
+spring:
+  profiles: cob
+  application:
+    name: config
+server:
+   port: 8888
+
+#eureka:
+#   client:
+#       register-with-eureka: false
+#       fetch-registry: false

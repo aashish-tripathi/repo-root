@@ -1,0 +1,45 @@
+spring:
+  profiles: dev
+  application:
+    name: employee
+  cloud:
+     config:
+         uri: http://localhost:8888  
+server:
+   port: 8080
+       
+---
+
+spring:
+  profiles: uat
+  application:
+    name: employee
+  cloud:
+     config:
+         uri: http://localhost:8888  
+server:
+   port: 8080
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: employee
+  cloud:
+     config:
+         uri: http://localhost:8888  
+server:
+   port: 8080
+
+---
+
+spring:
+  profiles: cob
+  application:
+    name: employee
+  cloud:
+     config:
+         uri: http://localhost:8888  
+server:
+   port: 8080

@@ -1,0 +1,53 @@
+spring:
+  profiles: dev
+  application:
+    name: discovery
+server:
+   port: 8761
+
+eureka:
+   client:
+       register-with-eureka: false
+       fetch-registry: false
+       
+---
+
+spring:
+  profiles: uat
+  application:
+    name: discovery
+server:
+   port: 8761
+
+eureka:
+   client:
+       register-with-eureka: false
+       fetch-registry: false
+
+---
+
+spring:
+  profiles: prod
+  application:
+    name: discovery
+server:
+   port: 8761
+
+eureka:
+   client:
+       register-with-eureka: false
+       fetch-registry: false
+
+---
+
+spring:
+  profiles: cob
+  application:
+    name: discovery
+server:
+   port: 8761
+
+eureka:
+   client:
+       register-with-eureka: false
+       fetch-registry: false
